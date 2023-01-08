@@ -10,7 +10,7 @@ const font = Kumbh_Sans({
 const Stat  = ({ count, name }) => (
     <li className="stat">
         <h2 className="text-bold count">{count}</h2>
-        <span className="text-small stat-name">{name}</span>
+        <div className="text-small stat-name">{name}</div>
     </li>
 )
 
@@ -35,10 +35,10 @@ export default function Home() {
             />
             <div className="details">
                 <div className="name">
-                    <h1 className="text-bold">Ntate Mpiti</h1>
-                    <span>26</span>
+                    <h1 className="text-bold">Victor Crest</h1>
+                    <div>26</div>
                 </div>
-                <span className="text-medium city">Qacha's Nek</span>
+                <div className="text-medium city">London</div>
             </div>
             <ul className="stats" role="list">
                 <Stat name="followers" count="80k" />
