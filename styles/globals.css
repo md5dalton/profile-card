@@ -134,8 +134,8 @@ h1, h2 {
 }
 
 
-@media (min-width: 480px) {
+/* @media (min-width: 480px) {
   .card {
     max-width: 350px;
   }
-}
+} */
