@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import { Inter } from '@next/font/google'
-// import styles from '../styles/Home.module.css'
+import { Kumbh_Sans  } from '@next/font/google'
 
-// const inter = Inter({ subsets: ['latin'] })
+const font = Kumbh_Sans({ 
+  subsets: ['latin'],
+  weight: ["400", "700"]
+})
 
 const Stat  = ({ count, name }) => (
     <li className="stat">
-        <h2 className="count">{count}</h2>
-        <h3 className="stat-name">{name}</h3>
+        <h2 className="text-bold count">{count}</h2>
+        <span className="text-small stat-name">{name}</span>
     </li>
 )
 
@@ -21,7 +23,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
       </Head>
-      <main>
+      <main className={font.className}>
         <section className="card">
           <div className="card-content">
             <Image
@@ -33,10 +35,10 @@ export default function Home() {
             />
             <div className="details">
                 <div className="name">
-                    <h1>Ntate Mpiti</h1>
+                    <h1 className="text-bold">Ntate Mpiti</h1>
                     <span>26</span>
                 </div>
-                <h3 className="city">Qacha's Nek</h3>
+                <span className="text-medium city">Qacha's Nek</span>
             </div>
             <ul className="stats" role="list">
                 <Stat name="followers" count="80k" />
